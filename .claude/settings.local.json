@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:santifer.io)",
+      "Bash(cd /tmp)",
+      "Bash(python -c ' *)",
+      "Bash(pip install *)",
+      "Bash(cp \"C:/Users/ddbda/Downloads/Dameka_Dublin_ML_Engineer_CV_2.docx\" \"C:/Users/ddbda/OneDrive/Desktop/GITHUB FOLDER/PORTFOLIO/assets/Dameka_Dublin_CV.docx\" && ls -la \"C:/Users/ddbda/OneDrive/Desktop/GITHUB FOLDER/PORTFOLIO/assets/\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git -c user.name=\"Dameka Dublin\" -c user.email=\"damekadublin@gmail.com\" commit -q -m \"Initial portfolio site\")",
+      "Bash(git branch *)"
+    ]
+  }
+}
