@@ -102,10 +102,10 @@ strong { font-weight: 600; }
 .nav__toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 /* ---------------- HERO ---------------- */
-.hero { max-width: var(--maxw); margin: 0 auto; padding: clamp(3rem, 8vw, 6.5rem) var(--pad) 2rem; }
+.hero { max-width: var(--maxw); margin: 0 auto; padding: clamp(3rem, 8vw, 6.5rem) var(--pad) 1.25rem; }
 .hero__grid {
   display: grid; grid-template-columns: 1.55fr .95fr; gap: clamp(2rem, 5vw, 4rem);
-  align-items: start;
+  align-items: stretch;
 }
 .eyebrow {
   font-family: var(--mono); font-size: .8rem; letter-spacing: .12em;
@@ -141,23 +141,20 @@ strong { font-weight: 600; }
 
 .hero__card {
   background: var(--surface); border: 1px solid var(--line); border-radius: var(--r);
-  padding: .7rem .7rem 1.4rem; box-shadow: 0 24px 60px -34px rgba(20,20,30,.4);
+  padding: .6rem; box-shadow: 0 24px 60px -34px rgba(20,20,30,.4);
   position: sticky; top: 90px;
+  display: flex; flex-direction: column;
 }
 .avatar {
-  width: 100%; aspect-ratio: 4/5; border-radius: 12px;
-  display: grid; place-items: center;
-  font-family: var(--serif); font-size: 3.4rem; color: var(--accent);
-  background:
-    radial-gradient(circle at 30% 25%, var(--accent-wash), transparent 60%),
-    linear-gradient(135deg, var(--paper-2), #fff);
-  object-fit: cover; object-position: center 22%;
+  display: block; width: 100%; height: auto; aspect-ratio: 1/1; border-radius: 12px;
+  object-fit: cover; object-position: center;
 }
-.hero__card-role { padding-inline: .9rem; }
-.hero__card-meta, .hero__card-links { padding-inline: .9rem; }
+.hero__card-role { padding-inline: .55rem; }
+.hero__card-meta, .hero__card-links { padding-inline: .55rem; }
+.hero__card-links { padding-bottom: .35rem; }
 .hero__card-role {
   font-family: var(--mono); font-size: .78rem; color: var(--muted);
-  margin: 1.1rem 0 1rem; letter-spacing: .01em;
+  margin: auto 0 1rem; letter-spacing: .01em;
 }
 .hero__card-meta { list-style: none; display: grid; gap: .7rem; }
 .hero__card-meta li { font-size: .92rem; color: var(--ink-soft); display: grid; grid-template-columns: 56px 1fr; gap: .6rem; }
@@ -170,7 +167,7 @@ strong { font-weight: 600; }
 .hero__card-links a:hover { opacity: .6; }
 
 /* ---------------- MARQUEE ---------------- */
-.marquee { overflow: hidden; border-block: 1px solid var(--line); background: var(--surface); margin-top: 2rem; }
+.marquee { overflow: hidden; border-block: 1px solid var(--line); background: var(--surface); margin-top: 0; }
 .marquee__track {
   display: flex; gap: 2.6rem; white-space: nowrap; width: max-content;
   padding: .85rem 0; animation: scroll 38s linear infinite;
