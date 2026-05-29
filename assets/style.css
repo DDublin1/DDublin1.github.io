@@ -151,7 +151,7 @@ strong { font-weight: 600; }
 }
 .hero__card-role { padding-inline: .55rem; }
 .hero__card-meta, .hero__card-links { padding-inline: .55rem; }
-.hero__card-links { padding-bottom: .35rem; }
+.hero__card-links { padding-bottom: .35rem; margin-bottom: auto; }
 .hero__card-role {
   font-family: var(--mono); font-size: .78rem; color: var(--muted);
   margin: auto 0 1rem; letter-spacing: .01em;
