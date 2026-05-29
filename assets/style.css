@@ -145,7 +145,7 @@ strong { font-weight: 600; }
   position: sticky; top: 90px;
 }
 .avatar {
-  width: 100%; aspect-ratio: 4/3.4; border-radius: 12px;
+  width: 100%; aspect-ratio: 1/1; border-radius: 12px;
   display: grid; place-items: center;
   font-family: var(--serif); font-size: 3.4rem; color: var(--accent);
   background:
